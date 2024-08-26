@@ -12,7 +12,8 @@ namespace C42_G02_EF01
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Topic>()
-                        .HasKey(t => t.ID)
+                        .HasKey(t => t.ID);
+            modelBuilder.Entity<Topic>()
                         .Property(t => t.Name)
                         .IsRequired()
                         .HasMaxLength(100);
