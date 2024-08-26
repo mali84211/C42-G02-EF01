@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace C42_G02_EF01
 {
-    [Table("Course_Inst")]
+    [Table("Course_Inst", Schema = "dbo")]
     internal class CourseInst
     {
         [Key]

@@ -9,6 +9,7 @@ namespace C42_G02_EF01
 {
     internal class ITIContext :DbContext
     {
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Topic>()

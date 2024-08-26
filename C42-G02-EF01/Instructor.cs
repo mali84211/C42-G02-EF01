@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace C42_G02_EF01
 {
+    [Table("Instructor", Schema = "dbo")]
     internal class Instructor
     {
         [Key]
